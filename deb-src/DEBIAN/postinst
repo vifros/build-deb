@@ -1,0 +1,17 @@
+#!/bin/bash
+# postinst script for vifros
+#
+# see: dh_installdeb(1)
+
+set -u
+set -e
+
+# Add the vifros user/group to the system.
+adduser --system --group --home vifros
+
+# Start the API service. This will start both
+# the API server and the REPL server.
+# It is named vifros since it doesn't conflict with the vifros CLI.
+service vifros start
+
+exit 0

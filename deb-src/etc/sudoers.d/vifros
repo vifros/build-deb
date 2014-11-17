@@ -1,0 +1,1 @@
+vifros ALL=NOPASSWD: /sbin/iptables, /sbin/ip6tables, /sbin/ipset

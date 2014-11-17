@@ -1,0 +1,16 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: vifros
+Upstream-Contact: Diosney <diosney.s@gmail.com>
+Source: https://github.com/vifros/vifros
+
+Files: *
+Copyright: 2013 Diosney <diosney.s@gmail.com>
+License: by-nc
+
+Files: debian/*
+Copyright: 2014 Diosney <diosney.s@gmail.com>
+License: by-nc
+
+License: by-nc
+ TODO: Put the actual license content here.
+ http://creativecommons.org/licenses/by-nc/3.0

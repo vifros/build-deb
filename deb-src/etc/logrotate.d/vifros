@@ -1,0 +1,9 @@
+/var/log/vifros/*.log {
+    daily
+    rotate 4
+    dateext
+    missingok
+    notifempty
+    compress
+    delaycompress
+}

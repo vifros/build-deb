@@ -1,0 +1,15 @@
+#!/bin/bash
+# prerm script for vifros
+#
+# see: dh_installdeb(1)
+
+set -u
+set -e
+
+# Remove the vifros user/group to the system.
+deluser --system --remove-home vifros
+
+# Stop the API service.
+service vifros stop || true
+
+exit 0

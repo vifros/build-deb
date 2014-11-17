@@ -1,0 +1,3 @@
+/etc/init/vifros.conf
+/etc/logrotate.d/vifros
+/etc/sudoers.d/vifros
