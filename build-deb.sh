@@ -58,7 +58,7 @@ popd
 fakeroot dpkg-deb --build ${BUILD} vifros_${VIFROS_VERSION}_all.deb
 
 # Clean the building folders.
-rm -rf ${BUILD}/*
-rm -rf ${UPSTREAM_SRC}/*
+rm -rf ${BUILD}
+rm -rf ${UPSTREAM_SRC}
 
 exit 0
