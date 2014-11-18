@@ -1,5 +1,5 @@
 Package: vifros
-Version: 0.0-1
+Version: #VERSION#
 Section: net
 Priority: optional
 Architecture: all
