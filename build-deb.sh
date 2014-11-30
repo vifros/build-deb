@@ -13,7 +13,7 @@ DEBIAN=${DEB_SRC}/DEBIAN
 #
 # Exit if npm is not installed.
 if [ -x "npm" ]; then
-  echo "Please install npm. Is usually installed while installing nodejs."
+  echo "Please install npm."
   exit 1
 fi
 
