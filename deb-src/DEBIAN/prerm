@@ -9,7 +9,10 @@ set -e
 # Remove the vifros user/group to the system.
 deluser --system --remove-home vifros
 
+# Removes the installed global links provided by the inner packages.
+rm -R /usr/local/sbin/vifros*
+
 # Stop the API service.
-service vifros stop || true
+stop vifros || true
 
 exit 0
