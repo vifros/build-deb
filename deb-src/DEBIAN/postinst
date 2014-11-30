@@ -7,11 +7,25 @@ set -u
 set -e
 
 # Add the vifros user/group to the system.
-adduser --system --group --home vifros
+adduser --system --group vifros
+
+# Change perms of log folder/files.
+chown -R vifros.vifros /var/log/vifros
+
+# Installs the needed global links provided by the inner packages.
+LINK_SRC=/opt/vifros/node_modules/.bin
+
+pushd ${LINK_SRC}
+  for file in *; do
+    if [ -L $file ]; then
+      ln --symbolic --force --logical ${LINK_SRC}/$file /usr/local/sbin/$file
+    fi
+  done
+popd
 
 # Start the API service. This will start both
 # the API server and the REPL server.
 # It is named vifros since it doesn't conflict with the vifros CLI.
-service vifros start
+start vifros
 
 exit 0
