@@ -3,7 +3,7 @@ Version: #VERSION#
 Section: net
 Priority: optional
 Architecture: all
-Depends: nodejs (>= 0.8), nodejs-legacy, iproute, iptables, ipset, mongodb, adduser
+Depends: nodejs (>= 0.8), npm, nodejs-legacy, iproute2, iptables, ipset, mongodb, adduser
 Maintainer: Diosney <diosney.s@gmail.com>
 Description: Manage your router by software solution
  virtual Firewall/Routing OS let you convert a regular PC into a
