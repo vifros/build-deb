@@ -23,6 +23,11 @@ pushd ${LINK_SRC}
   done
 popd
 
+# Rebuilds the native addons that may be present.
+pushd /opt/vifros
+  npm rebuild
+popd
+
 # Start the API service. This will start both
 # the API server and the REPL server.
 # It is named vifros since it doesn't conflict with the vifros CLI.
